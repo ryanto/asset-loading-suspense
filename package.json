@@ -13,10 +13,11 @@
     "node": ">=20.9.0"
   },
   "dependencies": {
-    "@twofold/framework": "^v0.0.9",
+    "@twofold/framework": "^0.0.9",
     "react": "18.3.0-canary-4b2a1115a-20240202",
     "react-dom": "18.3.0-canary-4b2a1115a-20240202",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "use-debounce": "^10.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.5",

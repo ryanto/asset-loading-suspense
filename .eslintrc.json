@@ -1,3 +1,6 @@
 {
-  "extends": ["plugin:twofold/recommended"]
+  "extends": ["plugin:twofold/recommended"],
+  "rules": {
+    "react/no-unknown-property": ["error", { "ignore": ["precedence"] }]
+  }
 }

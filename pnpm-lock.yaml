@@ -6,7 +6,7 @@ settings:
 
 dependencies:
   '@twofold/framework':
-    specifier: ^v0.0.9
+    specifier: ^0.0.9
     version: 0.0.9(react-dom@18.3.0-canary-4b2a1115a-20240202)(react@18.3.0-canary-4b2a1115a-20240202)(tailwindcss@3.4.1)(webpack@5.90.3)
   react:
     specifier: 18.3.0-canary-4b2a1115a-20240202
@@ -17,6 +17,9 @@ dependencies:
   tailwindcss:
     specifier: ^3.4.1
     version: 3.4.1
+  use-debounce:
+    specifier: ^10.0.0
+    version: 10.0.0(react@18.3.0-canary-4b2a1115a-20240202)
 
 devDependencies:
   '@types/node':
@@ -3405,6 +3408,15 @@ packages:
 
   /urlpattern-polyfill@9.0.0:
     resolution: {integrity: sha512-WHN8KDQblxd32odxeIgo83rdVDE2bvdkb86it7bMhYZwWKJz0+O0RK/eZiHYnM+zgt/U7hAHOlCQGfjjvSkw2g==}
+    dev: false
+
+  /use-debounce@10.0.0(react@18.3.0-canary-4b2a1115a-20240202):
+    resolution: {integrity: sha512-XRjvlvCB46bah9IBXVnq/ACP2lxqXyZj0D9hj4K5OzNroMDpTEBg8Anuh1/UfRTRs7pLhQ+RiNxxwZu9+MVl1A==}
+    engines: {node: '>= 16.0.0'}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.3.0-canary-4b2a1115a-20240202
     dev: false
 
   /util-deprecate@1.0.2:
