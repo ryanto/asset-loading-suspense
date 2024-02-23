@@ -12,7 +12,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <meta name="Content-Type" content="text/html; charset=utf-8" />
       </head>
       <body>
-        <main className="">{children}</main>
+        <main>{children}</main>
       </body>
 
       {/* This component is needed to start Twofold */}

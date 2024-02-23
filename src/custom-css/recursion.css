@@ -1,0 +1,25 @@
+.recursion-styles {
+  animation: fadeToGray 30s infinite alternate;
+
+  .background {
+    background: #fff89b;
+  }
+
+  .title,
+  .author,
+  .description {
+    color: #232323;
+  }
+}
+
+@keyframes fadeToGray {
+  0% {
+    filter: none;
+  }
+  50% {
+    filter: grayscale(1);
+  }
+  100% {
+    filter: none;
+  }
+}

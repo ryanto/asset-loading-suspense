@@ -1,0 +1,20 @@
+.dune-styles {
+  .background {
+    background: linear-gradient(
+      45deg,
+      rgb(198, 55, 44) 2.51397%,
+      9.68343%,
+      rgb(223, 161, 66) 16.8529%,
+      29.0503%,
+      rgb(0, 0, 0) 54.0037%,
+      86.406%,
+      rgb(192, 62, 38) 100%
+    );
+  }
+
+  .title,
+  .author,
+  .description {
+    color: white;
+  }
+}
