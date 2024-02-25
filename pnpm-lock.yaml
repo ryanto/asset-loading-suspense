@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@twofold/framework':
-    specifier: ^0.0.9
-    version: 0.0.9(react-dom@18.3.0-canary-4b2a1115a-20240202)(react@18.3.0-canary-4b2a1115a-20240202)(tailwindcss@3.4.1)(webpack@5.90.3)
+    specifier: ^0.0.10
+    version: 0.0.10(react-dom@18.3.0-canary-4b2a1115a-20240202)(react@18.3.0-canary-4b2a1115a-20240202)(tailwindcss@3.4.1)(webpack@5.90.3)
   react:
     specifier: 18.3.0-canary-4b2a1115a-20240202
     version: 18.3.0-canary-4b2a1115a-20240202
@@ -526,10 +526,20 @@ packages:
     resolution: {integrity: sha512-KHCnjYe/TCUMeEKuuRqQO4q2SicjVMtL/7uADfo1Y3HshHxH7J6f91XcHi3V4jThW4rGZYK5Ma36Bp31KXoM2Q==}
     dev: false
 
+  /@hattip/core@0.0.43:
+    resolution: {integrity: sha512-uZwk/5ffDiDAIxdh0LNimB6vbL4yoZ9zV7WycyS8CfXOPZyOK+CCbMQuDygChKkJAhbe2b3qsg0kXYzRqFRN1w==}
+    dev: false
+
   /@hattip/headers@0.0.35:
     resolution: {integrity: sha512-v9YAlhHzSD/JvMce+iQQ9TfOIEjMYBciDrcY2yYeLJMlO9axk3SRXZNlXx+R4qZDYmsbwYWccKdEWZjhKK+Zhw==}
     dependencies:
       '@hattip/core': 0.0.35
+    dev: false
+
+  /@hattip/headers@0.0.43:
+    resolution: {integrity: sha512-D2cm2RHdeta+eX+BxzKRniAVjmvwgHHgHuovQBYa2cTYgONR7ulelGsWSLpt4hDvatPbyKIzQ6vL5iDbdASA/g==}
+    dependencies:
+      '@hattip/core': 0.0.43
     dev: false
 
   /@hattip/polyfills@0.0.35:
@@ -559,6 +569,12 @@ packages:
       '@hattip/compose': 0.0.35
       '@hattip/cookie': 0.0.35
       '@hattip/core': 0.0.35
+    dev: false
+
+  /@hattip/static@0.0.43:
+    resolution: {integrity: sha512-SGspIZJA4UHZBJvVEhgodSGWXBFHVoay+d6PbNr8ACFtAy68DwwMVbEfF03LsEBUMXhew+OpsudzgxZQFW1ZDA==}
+    dependencies:
+      '@hattip/headers': 0.0.43
     dev: false
 
   /@hattip/walk@0.0.35:
@@ -668,8 +684,8 @@ packages:
     dev: false
     optional: true
 
-  /@twofold/framework@0.0.9(react-dom@18.3.0-canary-4b2a1115a-20240202)(react@18.3.0-canary-4b2a1115a-20240202)(tailwindcss@3.4.1)(webpack@5.90.3):
-    resolution: {integrity: sha512-irmnXR4n0jqrcWk07ZwciuXyxRZFH0CIWulW46YxgPNUnN6+AVVj57Lf9wxnz672PTXPU2v9zxCPKgpsjXeFdA==}
+  /@twofold/framework@0.0.10(react-dom@18.3.0-canary-4b2a1115a-20240202)(react@18.3.0-canary-4b2a1115a-20240202)(tailwindcss@3.4.1)(webpack@5.90.3):
+    resolution: {integrity: sha512-/pNwQ0d6LJXwdqpp5szxlpEm3xz++AG6ytEMaPJxVAFBD4EWTWZYyWa7zTRQxNV9OYjh2z7CHLhvKW+QAyi+Yg==}
     engines: {node: '>=20.9.0'}
     hasBin: true
     peerDependencies:
@@ -685,12 +701,15 @@ packages:
       '@hattip/response': 0.0.35
       '@hattip/router': 0.0.35
       '@hattip/session': 0.0.35
+      '@hattip/static': 0.0.43
       '@types/cookie': 0.5.4
       acorn: 8.11.3
       acorn-walk: 8.3.2
       astring: 1.8.6
       autoprefixer: 10.4.17(postcss@8.4.35)
       esbuild: 0.20.0
+      etag: 1.8.1
+      mime-types: 2.1.35
       postcss: 8.4.35
       postcss-load-config: 4.0.2(postcss@8.4.35)
       react: 18.3.0-canary-4b2a1115a-20240202
@@ -1801,6 +1820,11 @@ packages:
     resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /etag@1.8.1:
+    resolution: {integrity: sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==}
+    engines: {node: '>= 0.6'}
+    dev: false
 
   /events@3.3.0:
     resolution: {integrity: sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==}
