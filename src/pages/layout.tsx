@@ -33,10 +33,10 @@ export default async function Layout({
               />
             </div>
 
-            <div className="mx-auto max-h-[700px] max-w-[500px]">
+            <div className="mx-auto flex min-h-screen max-w-[500px] flex-col [@media(min-width:500px)]:max-h-[800px] [@media(min-width:500px)]:min-h-[800px]">
               <Bookshelf allBooks={allBooks} currentSlug={params.slug} />
 
-              <div className="relative flex max-h-[500px] min-h-[calc(100vh-120px)] [@media(min-width:500px)]:min-h-[calc(100vh-120px-80px)]">
+              <div className="relative flex flex-1">
                 <Suspense fallback={<Loading />}>{children}</Suspense>
               </div>
             </div>
