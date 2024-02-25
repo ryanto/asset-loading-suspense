@@ -1,0 +1,16 @@
+.foundation-styles {
+  .background {
+    background: linear-gradient(
+      180deg,
+      rgb(0, 0, 0) 0%,
+      50%,
+      rgb(214, 96, 36) 100%
+    );
+  }
+
+  .title,
+  .author,
+  .description {
+    color: white;
+  }
+}

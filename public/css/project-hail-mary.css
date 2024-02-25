@@ -1,0 +1,21 @@
+.project-hail-mary-styles {
+  .background {
+    background: linear-gradient(
+      125deg,
+      rgb(170, 141, 64) 0%,
+      20%,
+      rgb(1, 1, 1) 40%,
+      90.3439%,
+      rgb(92, 93, 95) 100%
+    );
+  }
+
+  .title,
+  .author {
+    color: #eee;
+  }
+
+  .description {
+    color: white;
+  }
+}

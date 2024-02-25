@@ -1,0 +1,21 @@
+.the-martian-styles {
+  .background {
+    background: linear-gradient(
+      90deg,
+      rgb(227, 122, 40) 0%,
+      46.4207%,
+      rgb(246, 132, 47) 58.871%,
+      86.1841%,
+      rgb(231, 78, 35) 90.1048%,
+      96.0589%,
+      rgb(62, 12, 11) 100%
+    );
+  }
+
+  .title,
+  .author,
+  .description {
+    color: #000;
+    padding-right: 32px;
+  }
+}

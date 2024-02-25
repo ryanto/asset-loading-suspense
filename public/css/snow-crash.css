@@ -1,0 +1,57 @@
+.snow-crash-styles {
+  .background {
+    background: linear-gradient(
+      90deg,
+      rgb(52, 49, 58) 0%,
+      3.81853%,
+      rgb(46, 52, 77) 10.87097%,
+      11%,
+      rgb(194, 50, 94) 16.9%,
+      17.3241%,
+      rgb(45, 43, 46) 24.7823%
+    );
+  }
+
+  .title,
+  .author,
+  .description {
+    color: white;
+    padding-left: 84px;
+  }
+
+  .title,
+  .author {
+    animation: slideDownSnowCrash 0.25s ease-in-out;
+  }
+
+  .image,
+  .description {
+    animation: slideUpSnowCrash 0.25s ease-in-out;
+  }
+}
+
+@keyframes slideDownSnowCrash {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -32px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideUpSnowCrash {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 32px, 0);
+    scale: 0.95;
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    scale: 1;
+  }
+}

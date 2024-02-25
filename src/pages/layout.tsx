@@ -24,7 +24,7 @@ export default async function Layout({
       </head>
       <body>
         <main>
-          <div className="group relative flex min-h-screen flex-col bg-black [@media(min-width:500px)]:py-10">
+          <div className="group relative flex min-h-screen flex-col bg-black [@media(min-width:501px)]:py-10">
             {/* If our app is transitioning then this div will show its overlay + spinner */}
             <div className="pointer-events-none absolute inset-0 z-[5] flex justify-center bg-black/50 opacity-0 backdrop-blur-sm transition duration-150 ease-out group-has-[[data-transitioning]]:opacity-100">
               <Spinner
@@ -33,7 +33,7 @@ export default async function Layout({
               />
             </div>
 
-            <div className="mx-auto flex min-h-screen max-w-[500px] flex-col [@media(min-width:500px)]:max-h-[800px] [@media(min-width:500px)]:min-h-[800px]">
+            <div className="mx-auto flex min-h-screen max-w-[501px] flex-col [@media(min-width:501px)]:max-h-[800px] [@media(min-width:501px)]:min-h-[800px]">
               <Bookshelf allBooks={allBooks} currentSlug={params.slug} />
 
               <div className="relative flex flex-1">
