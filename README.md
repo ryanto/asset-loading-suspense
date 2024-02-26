@@ -8,3 +8,5 @@ To run this app:
 pnpm install
 pnpm dev
 ```
+
+Requires Node 20.9.0 or higher.
